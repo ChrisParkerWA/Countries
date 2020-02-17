@@ -15,7 +15,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(countries, id: \.self) { country in
+                ForEach(countries) { country in
                     VStack(alignment: .leading) {
                         Text(country.countryName)
                             .font(.system(size: 18)).bold()
